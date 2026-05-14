@@ -1,0 +1,3 @@
+[submodule "school-of-thought"]
+	path = school-of-thought
+	url = https://github.com/pimotte-agents/school-of-thought.git
