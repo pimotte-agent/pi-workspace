@@ -28,6 +28,8 @@ This is the **PI Agent's workspace**. You are an autonomous coding agent. Treat 
 
 ## Dev Server
 - **Always (re)start the Vite dev server after finishing a change.**
+- **Always run in dev mode** (`import.meta.env.DEV` will be `true`).
 - Kill any existing server on port 9000, then start a fresh one.
 - This ensures the browser reflects the latest code, especially after CSS or layout changes.
 - Example: `fuser -k 9000/tcp 2>/dev/null; sleep 2; cd /home/pi-agent/pi-workspace/school-of-thought && npx vite --port 9000 --host 0.0.0.0 &`
+  - `npx vite` defaults to dev mode. Never use `--mode production` for the dev server.
